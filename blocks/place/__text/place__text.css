@@ -1,0 +1,11 @@
+.place__text {
+    grid-area: paragraph;
+}
+
+@media screen and (max-width: 575px) {
+    .place__text {
+        grid-column: 1;
+        grid-row: 4;
+        margin: 32px 16px 0;
+    }
+}

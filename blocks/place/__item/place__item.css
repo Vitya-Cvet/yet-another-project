@@ -1,0 +1,30 @@
+.place__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title website"
+        "image paragraph";
+    grid-gap: 48px 40px;
+}
+
+@media screen and (max-width: 1023px) {
+    .place__item {
+        grid-gap: 48px 32px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .place__item {
+        grid-gap: 48px 28px;
+        grid-template-columns: 340px 1fr;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .place__item {
+        grid-template-columns: 320px;
+        grid-template-rows: repeat(4, auto);
+        grid-gap: 0;
+    }
+
+}
